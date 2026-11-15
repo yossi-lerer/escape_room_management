@@ -7,10 +7,10 @@ def view_all_orders():
             print(f"{key}: {value}")
         print("\n==============================================")
 
-def view_order_by_id(order_id):
+def view_order_by_id(booking_id):
     data = get_data_from_json("./src/db/bookings.json")
     for record in data:
-        if record["room_id"] == order_id:
+        if record["booking_id"] == booking_id:
             for key, value in record.items():
                 print(f"{key}: {value}")
 
