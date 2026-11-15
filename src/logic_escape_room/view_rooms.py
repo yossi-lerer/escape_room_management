@@ -10,6 +10,6 @@ def view_all_rooms():
 def view_room_by_id(room_id):
     data = get_data_from_json("./src/db/rooms.json")
     for record in data:
-        if record["booking_id"] == room_id:
+        if record["room_id"] == room_id:
             for key, value in record.items():
                 print(f"{key}: {value}")

@@ -17,8 +17,12 @@ def Add_a_new_room(name, difficulty, duration, min_players, max_players, price_p
 def generate_room_id():
     return 984
 
-def update_room():
-    pass
+def update_room(room_id, key, value):
+    data = get_data_from_json("./src/db/rooms.json")
+    for record in data:
+        if record["room_id"] == room_id:
+            record[key] = value
+        update_json("./src/db/rooms.json", data)
 
 def enable_or_disable_room(room_id):
     data = get_data_from_json("./src/db/rooms.json")
