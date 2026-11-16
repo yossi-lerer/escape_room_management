@@ -97,5 +97,27 @@
         "total_price": 320.0,
         "status": "Active",
         "cancellation_fee": 0.0
+    },
+    {
+        "booking_id": "B010",
+        "customer_name": "yossi",
+        "room_id": "R002",
+        "booking_date": "18-11-2026",
+        "start_time": "11:47",
+        "players": 3,
+        "total_price": 500,
+        "status": "Active",
+        "cancellation_fee": 0.0
+    },
+    {
+        "booking_id": "B011",
+        "customer_name": "mosh",
+        "room_id": "R002",
+        "booking_date": "30-12-2026",
+        "start_time": "11:30",
+        "players": 5,
+        "total_price": 500,
+        "status": "Active",
+        "cancellation_fee": 0.0
     }
 ]

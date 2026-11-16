@@ -13,6 +13,7 @@ def view_order_by_id(booking_id):
         if record["booking_id"] == booking_id:
             for key, value in record.items():
                 print(f"{key}: {value}")
+            return record
 
 def view_orders_by_customer(customer_name):
     data = get_data_from_json("./src/db/bookings.json")
