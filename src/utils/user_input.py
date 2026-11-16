@@ -1,7 +1,13 @@
+from src.utils.validation import validation_positive_num, validation_text
 def num_input(msg):
-    user_input = input(f"{msg}")
-    return int(user_input)
+    user_num_input = ""
+    while not validation_positive_num(user_num_input):
+        user_num_input = input(msg)
+    return int(user_num_input)
+
 
 def str_input(msg):
-    user_input = input(f"{msg}")
-    return user_input
+    user_text_input = ""
+    while not validation_text(user_text_input):
+        user_text_input = input(msg)
+    return user_text_input
